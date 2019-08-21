@@ -1,15 +1,7 @@
 const routes = require('express').Router()
+const MessageController = require('./controllers/message');
 
-routes.get('/', (req, res) => {
-    console.log(`HW ${req.query.name}!`)
-    return res.json(`HW ${req.query.name}`)
-})
-
-routes.post('/', (req, res) => {
-    const body = req.body
-    return res.json({
-        "req.body": body
-    })
-})
+routes.get('/messages/:messageId', MessageController.route_getJSON)
+routes.post('/messages', MessageController.route_postJSON)
 
 module.exports = routes
