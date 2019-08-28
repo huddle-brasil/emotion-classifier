@@ -5,19 +5,19 @@ const MessageSchema = new Schema({
         type: String,
         required: true
     },
-    discordId: {
+    label: {},
+    discordMsgId: {
         type: String,
-        required: true
-    },
-    author: {
-        type: {},
         required: true
     },
     channelId: {
         type: String,
         required: true
     },
-    label: {},
+    author: {
+        type: {},
+        required: true
+    }
 }, { timestamps: true }
 )
 

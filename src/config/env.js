@@ -1,4 +1,7 @@
 exports.ENVS = {
+    "mongodb":{
+        "connect": "mongodb+srv://huddle:Huddle-2018@cluster0-qybqp.gcp.mongodb.net/emotionClassifier?retryWrites=true&w=majority"
+    },
     "automl": {
         "credentials": {
             "type": "service_account",
@@ -15,5 +18,9 @@ exports.ENVS = {
         "classifierId": "TCN3064389574322054343",
         "projectId": "emotion-classifier-huddle",
         "zone": "us-central1"
+    },
+    "discord": {
+        "token": 'NjE1NzM2NTg3MzU0ODk4NDQy.XWZzYQ.POTN4_K7T3uL1ZeZ9vCDiSY1qWE',
+        "prefix": "?"
     }
 }
