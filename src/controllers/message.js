@@ -1,9 +1,13 @@
 const Message = require('../models/message')
 const automl = require('@google-cloud/automl');
-const {ENVS} = require('../config/env');
 
 const Discord = require('discord.js');
 const client = new Discord.Client()
+
+let automlConfig = process.env.AUTOML 
+automlConfig = JSON.parse(automlConfig)
+
+
 
 exports.route_getJSON = async (req, res) => {
     const messageId = req.params.messageId
@@ -39,11 +43,11 @@ exports.route_deleteJSON = async (req, res) => {
 
 async function predictText(text){
     const client = new automl.v1beta1.PredictionServiceClient({
-        credentials: ENVS.automl.credentials
+        credentials: automlConfig.credentials
     });
     console.log({text});
     
-    const formattedName = client.modelPath(ENVS.automl.projectId, ENVS.automl.zone, ENVS.automl.classifierId);
+    const formattedName = client.modelPath(automlConfig.projectId, automlConfig.zone, automlConfig.classifierId);
     
     const payload = {
         "textSnippet": {
@@ -71,12 +75,12 @@ async function predictText(text){
 
 client.on('ready', () => console.log("I am ready"))
 
-client.login(ENVS.discord.token)
+client.login(process.env.DISCORD_TOKEN)
 
 client.on('message', async discordMessage => {
-    if (discordMessage.author.bot || !discordMessage.content.startsWith(ENVS.discord.prefix)) return
+    if (discordMessage.author.bot) return
 
-    const text = discordMessage.content.replace(ENVS.discord.prefix, "").trim()
+    const text = discordMessage.content
 
     const label = await predictText(text)
     
