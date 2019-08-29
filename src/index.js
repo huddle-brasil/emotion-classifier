@@ -12,3 +12,5 @@ app.use(routes)
 mongoose.connect(ENVS.mongodb.connect, {useNewUrlParser: true})
 
 app.listen(3333, () => console.log("Rodando na porta 3333"))
+console.log('Oi Heroku')
+
