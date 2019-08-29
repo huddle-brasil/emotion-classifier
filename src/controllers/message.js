@@ -87,7 +87,7 @@ client.on('message', async discordMessage => {
     const messageData = {
         text,
         label,
-        discorMsgId: discordMessage.id,
+        discordMsgId: discordMessage.id,
         channelId: discordMessage.channel.id,
         author: {
             id: discordMessage.author.id,
