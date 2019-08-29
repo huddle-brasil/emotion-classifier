@@ -1,0 +1,29 @@
+{
+  "name": "emotion-classifier",
+  "version": "1.0.0",
+  "description": "A project to messure team emotions by text messages",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huddle-brasil/emotion-classifier.git"
+  },
+  "author": "lyukio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huddle-brasil/emotion-classifier/issues"
+  },
+  "homepage": "https://github.com/huddle-brasil/emotion-classifier#readme",
+  "dependencies": {
+    "@google-cloud/automl": "^1.3.0",
+    "cors": "^2.8.5",
+    "discord.js": "^11.5.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
