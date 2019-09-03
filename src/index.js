@@ -13,6 +13,6 @@ app.use(express.json())
 app.use(routes)
 mongoose.connect(process.env.MONGODB, {useNewUrlParser: true})
 
-app.listen(port, () => console.log("Rodando na porta 3333"))
+app.listen(port, () => console.log(`Rodando na porta ${port}`))
 console.log('Oi Heroku')
 

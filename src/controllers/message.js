@@ -4,8 +4,7 @@ const automl = require('@google-cloud/automl');
 const Discord = require('discord.js');
 const client = new Discord.Client()
 
-let automlConfig = process.env.AUTOML 
-automlConfig = JSON.parse(automlConfig)
+const automlConfig = JSON.parse(process.env.AUTOML)
 
 
 
