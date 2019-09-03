@@ -6,7 +6,7 @@ herokuRoutes.get('/herokuLives', (req, res) => {
 })
 
 setInterval(async () => {
-    await axios.get(`${process.env.thisAppUrl}/herokuLives`)
+    await axios.get(`${process.env.SELF_URL}/herokuLives`)
 }, 1000 * 60 * 25)
 
 module.exports = herokuRoutes
