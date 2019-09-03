@@ -1,7 +1,7 @@
 const axios = require('axios')
 const herokuRoutes = require('express').Router()
 
-router.get('/herokuLives', (req, res) => {
+herokuRoutes.get('/herokuLives', (req, res) => {
     res.send('just to heroku lives')
 })
 
