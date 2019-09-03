@@ -1,13 +1,8 @@
 const Message = require('../models/message')
 const automl = require('@google-cloud/automl');
+const discordClient = require('../discord');
 
-const Discord = require('discord.js');
-const client = new Discord.Client()
-
-let automlConfig = process.env.AUTOML 
-automlConfig = JSON.parse(automlConfig)
-
-
+const automlConfig = JSON.parse(process.env.AUTOML)
 
 exports.route_getJSON = async (req, res) => {
     const messageId = req.params.messageId
@@ -42,12 +37,12 @@ exports.route_deleteJSON = async (req, res) => {
 }
 
 async function predictText(text){
-    const client = new automl.v1beta1.PredictionServiceClient({
+    const automlClient = new automl.v1beta1.PredictionServiceClient({
         credentials: automlConfig.credentials
     });
     console.log({text});
     
-    const formattedName = client.modelPath(automlConfig.projectId, automlConfig.zone, automlConfig.classifierId);
+    const formattedName = automlClient.modelPath(automlConfig.projectId, automlConfig.zone, automlConfig.classifierId);
     
     const payload = {
         "textSnippet": {
@@ -62,7 +57,7 @@ async function predictText(text){
     };
 
     try {
-        const response = await client.predict(request)
+        const response = await automlClient.predict(request)
         let label = response[0].payload[0]
         delete label.annotationSpecId
         delete label.detail
@@ -73,11 +68,7 @@ async function predictText(text){
     }
 }
 
-client.on('ready', () => console.log("I am ready"))
-
-client.login(process.env.DISCORD_TOKEN)
-
-client.on('message', async discordMessage => {
+discordClient.on('message', async discordMessage => {
     if (discordMessage.author.bot) return
 
     const text = discordMessage.content
