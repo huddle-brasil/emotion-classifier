@@ -1,6 +1,6 @@
 #emotion classifier
-A project to measure team emotions through text messaging on a communication channel.
-First, he uses Discord, but our goal is includes Slack, Facebook Messenger, Whatsapp and anyothers.
+A project to measure team emotions through text messaging in a communication channel.
+First, he use Discord, but our goal includes Slack, Facebook Messenger, Whatsapp and anyothers.
 
 # Steps
 ## 1 Install Application's Base Dependencies
@@ -9,7 +9,7 @@ First, he uses Discord, but our goal is includes Slack, Facebook Messenger, What
 - npm cors
 
 ## 2 Database
-We use the NoSQL database, MongoDB. For this we use MongoDB cloud service called Atlas.
+We use the NoSQL database, MongoDB. For this we use their's cloud service called Atlas.
     Website: https://www.mongodb.com/cloud/atlas
     Doc: https://docs.atlas.mongodb.com/getting-started/
 
@@ -17,7 +17,7 @@ And to help us in the work of the model, we use the mongoose:
 - mongoose npm
 
 ## 3 Machine Learning's services
-In order classify the text messages sent by team, we use the Google's Machine Learning service, called AutoML Natural Language.
+In order to classify the text messages sent by the team, we use the Google's Machine Learning service, called AutoML Natural Language.
 Our goal isn't to teach about this Google's service, so we recommend reading the service's doc:
     Doc: https://cloud.google.com/natural-language/automl/docs/quickstart
 
@@ -28,11 +28,11 @@ After you create and configure the Google project, you will need:
  - Access key
 
 ## Discord
-To get text messages sent by "Discord", we have create and use Discord bot
+To get text messages sent by "Discord", we have to create and use Discord bot
     Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
 
 ## Server in production
-This app uses Heroku as server to run in production.
+This app uses Heroku as a server to run in production.
     Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
 
