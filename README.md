@@ -1,4 +1,4 @@
-#emotion classifier
+# emotion classifier
 A project to measure team emotions through text messaging on a communication channel.
 First, he uses Discord, but our goal is includes Slack, Facebook Messenger, Whatsapp and anyothers.
 
