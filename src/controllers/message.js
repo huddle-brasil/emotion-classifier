@@ -26,9 +26,6 @@ exports.route_postJSON = async (req, res) => {
     message.label = await predictText(data.text)
 
     return res.json(await message.save())
-    // const message = await Message.create(data)
-    return res.json(message)
-    // return res.json(message.label)
 }
 
 exports.route_deleteJSON = async (req, res) => {
@@ -89,5 +86,4 @@ discordClient.on('message', async discordMessage => {
     console.log("messageData: ", messageData);
     await message.save()
 
-    // message.channel.send(`\`\`\`json\n${label.displayName}\n\`\`\``);
 })
