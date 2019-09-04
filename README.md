@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-#emotion classifier
+# emotion classifier
 A project to measure team emotions through text messaging in a communication channel.
 First, he use Discord, but our goal includes Slack, Facebook Messenger, Whatsapp and anyothers.
-=======
-# emotion classifier
-A project to measure team emotions through text messaging on a communication channel.
-First, he uses Discord, but our goal is includes Slack, Facebook Messenger, Whatsapp and anyothers.
->>>>>>> 968799b2a02d28a3013d9787fb3b5a62c8bed7d1
 
 # Steps
 ## 1 Install Application's Base Dependencies
@@ -16,8 +10,8 @@ First, he uses Discord, but our goal is includes Slack, Facebook Messenger, What
 
 ## 2 Database
 We use the NoSQL database, MongoDB. For this we use their's cloud service called Atlas.
-    Website: https://www.mongodb.com/cloud/atlas
-    Doc: https://docs.atlas.mongodb.com/getting-started/
+- Website: https://www.mongodb.com/cloud/atlas
+- Doc: https://docs.atlas.mongodb.com/getting-started/
 
 And to help us in the work of the model, we use the mongoose:
 - mongoose npm
@@ -35,11 +29,11 @@ After you create and configure the Google project, you will need:
 
 ## Discord
 To get text messages sent by "Discord", we have to create and use Discord bot
-    Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
+- Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
 
 ## Server in production
 This app uses Heroku as a server to run in production.
-    Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
+- Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
 
 # Classificador de emoções (PT-BR)
@@ -54,8 +48,8 @@ Primeiro, ele usa o Discord, mas nosso objetivo é usar também: Slack, Facebook
 
 ## 2 Banco de dados
 Usamos o banco de dados NoSQL, MongoDB. Para isso, usamos o serviço de nuvem MongoDB chamado Atlas.
-Website: https://www.mongodb.com/cloud/atlas
-Doc: https://docs.atlas.mongodb.com/getting-started/
+- Website: https://www.mongodb.com/cloud/atlas
+- Doc: https://docs.atlas.mongodb.com/getting-started/
 
 E para nos ajudar no trabalho com as models, usamos o mongoose:
 - mongoose npm
@@ -63,7 +57,7 @@ E para nos ajudar no trabalho com as models, usamos o mongoose:
 ## 3 Serviços de Machine Learning
 Para classificar as mensagens de texto enviadas pela equipe, usamos o serviço de aprendizagem de máquina do Google, chamado AutoML Natural Language.
 Nosso objetivo não é ensinar sobre o serviço deste Google, por isso recomendamos a leitura da documentação do serviço:
-Doc: https://cloud.google.com/natural-language/automl/docs/quickstart
+- Doc: https://cloud.google.com/natural-language/automl/docs/quickstart
 
 Depois de criar e configurar o projeto do Google, você precisará de:
 - ID do projeto;
@@ -73,8 +67,8 @@ Depois de criar e configurar o projeto do Google, você precisará de:
 
 ## Discord
 Para receber as mensagens de texto enviadas por "Discord", criamos e usamos o Discord bot
-Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
+- Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
 
 ## Servidor em produção
 Este aplicativo usa Heroku como servidor para executar em produção.
-    Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
+- Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
