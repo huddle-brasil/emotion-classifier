@@ -1,5 +1,5 @@
 # emotion classifier
-A project to measure team emotions through text messaging in a communication channel.
+A project to measure team emotions through text messaging in a communication channel.<br/>
 First, he use Discord, but our goal includes Slack, Facebook Messenger, Whatsapp and anyothers.
 
 # Steps
@@ -9,7 +9,7 @@ First, he use Discord, but our goal includes Slack, Facebook Messenger, Whatsapp
 - npm cors
 
 ## 2 Database
-We use the NoSQL database, MongoDB. For this we use their's cloud service called Atlas.
+We use the NoSQL database, MongoDB. For this we use their's cloud service called Atlas.<br/>
 - Website: https://www.mongodb.com/cloud/atlas
 - Doc: https://docs.atlas.mongodb.com/getting-started/
 
@@ -17,7 +17,7 @@ And to help us in the work of the model, we use the mongoose:
 - mongoose npm
 
 ## 3 Machine Learning's services
-In order to classify the text messages sent by the team, we use the Google's Machine Learning service, called AutoML Natural Language.
+In order to classify the text messages sent by the team, we use the Google's Machine Learning service, called AutoML Natural Language.<br/>
 Our goal isn't to teach about this Google's service, so we recommend reading the service's doc:
     Doc: https://cloud.google.com/natural-language/automl/docs/quickstart
 
@@ -37,7 +37,7 @@ This app uses Heroku as a server to run in production.
 
 
 # Classificador de emoções (PT-BR)
-Um projeto para medir as emoções da equipe por meio de mensagens de texto em um canal de comunicação.
+Um projeto para medir as emoções da equipe por meio de mensagens de texto em um canal de comunicação.<br/>
 Primeiro, ele usa o Discord, mas nosso objetivo é usar também: Slack, Facebook Messenger, Whatsapp e qualquer outro.
 
 # Passos
@@ -55,7 +55,7 @@ E para nos ajudar no trabalho com as models, usamos o mongoose:
 - mongoose npm
 
 ## 3 Serviços de Machine Learning
-Para classificar as mensagens de texto enviadas pela equipe, usamos o serviço de aprendizagem de máquina do Google, chamado AutoML Natural Language.
+Para classificar as mensagens de texto enviadas pela equipe, usamos o serviço de aprendizagem de máquina do Google, chamado AutoML Natural Language.<br/>
 Nosso objetivo não é ensinar sobre o serviço deste Google, por isso recomendamos a leitura da documentação do serviço:
 - Doc: https://cloud.google.com/natural-language/automl/docs/quickstart
 
