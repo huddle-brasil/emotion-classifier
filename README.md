@@ -31,6 +31,9 @@ After you create and configure the Google project, you will need:
 To get text messages sent by "Discord", we have create and use Discord bot
     Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
 
+## Server in production
+This app uses Heroku as server to run in production.
+    Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
 
 # Classificador de emoções (PT-BR)
@@ -65,3 +68,7 @@ Depois de criar e configurar o projeto do Google, você precisará de:
 ## Discord
 Para receber as mensagens de texto enviadas por "Discord", criamos e usamos o Discord bot
 Doc: https://discordapp.com/developers/docs/topics/oauth2#bots
+
+## Servidor em produção
+Este aplicativo usa Heroku como servidor para executar em produção.
+    Doc: https://devcenter.heroku.com/articles/getting-started-with-nodejs
