@@ -6,7 +6,7 @@ const automlConfig = JSON.parse(process.env.AUTOML)
 
 exports.route_getJSON = async (req, res) => {
     const messageId = req.params.messageId
-    const filter = JSON.parse(req.query.filter) || {}
+    const filter = JSON.parse(req.query.filter || {})
     if (!messageId) {
         const messages = await Message.find(filter)
         if (messages.length === 0) return res.status(400).json({"response": "There isn't messages on DB"})
