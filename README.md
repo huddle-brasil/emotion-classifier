@@ -9,7 +9,7 @@ First, he use Discord, but our goal includes Slack, Facebook Messenger, Whatsapp
 - npm cors
 
 ## 2 Database
-We use the NoSQL database, MongoDB. For this we use their's cloud service called Atlas.<br/>
+We use the NoSQL database, MongoDB. For this we use their cloud service called Atlas.<br/>
 - Website: https://www.mongodb.com/cloud/atlas
 - Doc: https://docs.atlas.mongodb.com/getting-started/
 
